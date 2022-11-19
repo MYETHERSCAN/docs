@@ -1,6 +1,6 @@
 ---
-title: Sobre organizações
-intro: 'As organizações são contas compartilhadas em que as empresas e projetos de código aberto podem colaborar em vários projetos de uma só vez, com funcionalidades sofisticadas de segurança e administrativas.'
+title: About organizations
+intro: 'Organizations are shared accounts where businesses and open-source projects can collaborate across many projects at once, with sophisticated security and administrative features.'
 redirect_from:
   - /articles/about-organizations
   - /github/setting-up-and-managing-organizations-and-teams/about-organizations
@@ -14,45 +14,46 @@ topics:
   - Teams
 ---
 
-## Sobre organizações
+## About organizations
 
-{% data reusables.organizations.about-organizations %} Para obter mais informações sobre tipos de conta, consulte "[Tipos de contas de {% data variables.product.prodname_dotcom %}](/get-started/learning-about-github/types-of-github-accounts)".
+{% data reusables.organizations.about-organizations %} For more information about account types, see "[Types of {% data variables.product.prodname_dotcom %} accounts](/get-started/learning-about-github/types-of-github-accounts)."
 
-Você pode convidar um número ilimitado de pessoas para participar da sua organização e, em seguida, dar a esses integrantes da organização uma série de funções que concedam diferentes níveis de acesso à organização e seus dados. Para obter mais informações, consulte "[Funções em uma organização](/organizations/managing-peoples-access-to-your-organization-with-roles/roles-in-an-organization)".
+You can invite an unlimited number of people to join your organization, then give these organization members a variety of roles that grant different levels of access to the organization and its data. For more information, see "[Roles in an organization](/organizations/managing-peoples-access-to-your-organization-with-roles/roles-in-an-organization)."
 
-Além de gerenciar o acesso à própria organização, é possível gerenciar separadamente o acesso aos repositórios da organização, quadros de projetos e aplicativos. Para obter mais informações, consulte "[Funções de um repositório para uma organização](/organizations/managing-access-to-your-organizations-repositories/repository-roles-for-an-organization)", "[Permissões do quadro de projeto para uma organização](/organizations/managing-access-to-your-organizations-project-boards/project-board-permissions-for-an-organization)" e "[Gerenciando o acesso dos aplicativos da sua organização](/organizations/managing-access-to-your-organizations-apps)."
+In addition to managing access to the organization itself, you can separately manage access to your organization's repositories, project boards, and apps. For more information, see "[Repository roles for an organization](/organizations/managing-access-to-your-organizations-repositories/repository-roles-for-an-organization)", "[Project board permissions for an organization](/organizations/managing-access-to-your-organizations-project-boards/project-board-permissions-for-an-organization)", and "[Managing access to your organization's apps](/organizations/managing-access-to-your-organizations-apps)."
 
-Para simplificar o gerenciamento de acesso e melhorar a colaboração, você pode criar equipes aninhadas que refletem a estrutura do seu grupo, com permissões de acesso em cascata e menções. Para obter mais informações, consulte "[Sobre equipes](/organizations/organizing-members-into-teams/about-teams)".
+To simplify access management and enhance collaboration, you can create nested teams that reflect your group's structure, with cascading access permissions and mentions. For more information, see "[About teams](/organizations/organizing-members-into-teams/about-teams)."
 
-Você pode configurar a organização para atender às necessidades exclusivas do seu grupo gerenciando as configurações como, por exemplo, restringir os tipos de repositórios que os integrantes podem criar. Para obter mais informações, consulte "[Gerenciar as configurações da organização](/organizations/managing-organization-settings)".
+You can configure the organization to meet the unique needs of your group by managing settings, such as restricting the types of repositories that members can create. For more information, see "[Managing organization settings](/organizations/managing-organization-settings)."
 
-Para fortalecer a segurança da sua organização, você pode aplicar os requisitos de segurança e revisar o log de auditoria da organização. Para obter mais informações, consulte "[Mantendo sua organização segura](/organizations/keeping-your-organization-secure)".
+To harden your organization's security, you can enforce security requirements and review the organization's audit log. For more information, see "[Keeping your organization secure](/organizations/keeping-your-organization-secure)."
 
-{% data reusables.organizations.org-ownership-recommendation %} Para obter mais informações, consulte "[Manter a continuidade da propriedade para sua organização](/organizations/managing-peoples-access-to-your-organization-with-roles/maintaining-ownership-continuity-for-your-organization)".
+To learn how to use organizations most effectively, see "[Best practices for organizations](/organizations/collaborating-with-groups-in-organizations/best-practices-for-organizations)."
 
 {% ifversion fpt or ghec %}
-## Sobre a disponibilidade de recursos
+## About feature availability
 
 {% data reusables.organizations.organization-plans %}
 {% endif %}
 
-## Organizações e contas corporativas
+## Organizations and enterprise accounts
 
 {% ifversion fpt %}
-As contas corporativas são uma funcionalidade de {% data variables.product.prodname_ghe_cloud %} que permite aos proprietários gerenciar a política e cobrança centralmente para várias organizações. Para obter mais informações, consulte [a documentação de {% data variables.product.prodname_ghe_cloud %}](/enterprise-cloud@latest/organizations/collaborating-with-groups-in-organizations/about-organizations).
+Enterprise accounts are a feature of {% data variables.product.prodname_ghe_cloud %} that allow owners to centrally manage policy and billing for multiple organizations. For more information, see [the {% data variables.product.prodname_ghe_cloud %} documentation](/enterprise-cloud@latest/organizations/collaborating-with-groups-in-organizations/about-organizations).
 {% else %}
-{% ifversion ghec %}Para organizações que pertencem a uma conta corporativa, a cobrança é gerenciada no nível da conta corporativa, e as configurações de cobrança não estão disponíveis no nível da organização.{% endif %} Os proprietários de empresas podem definir políticas para todas as organizações na conta corporativa ou permitir que os proprietários da organização definam a política no nível da organização. Os proprietários da organização não podem alterar as configurações aplicadas à sua organização no nível da conta corporativa. Se você tiver dúvidas sobre uma política ou configuração da sua organização, entre em contato com o proprietário da conta corporativa.
+{% ifversion ghec %}For organizations that belong to an enterprise account, billing is managed at the enterprise account level, and billing settings are not available at the organization level.{% endif %} Enterprise owners can set policy for all organizations in the enterprise account or allow organization owners to set the policy at the organization level. Organization owners cannot change settings enforced for your organization at the enterprise account level. If you have questions about a policy or setting for your organization, contact the owner of your enterprise account.
 
 {% ifversion ghec %}
-{% data reusables.enterprise.create-an-enterprise-account %} Para obter mais informações, consulte "[Criando uma conta corporativa](/admin/overview/creating-an-enterprise-account)".
+{% data reusables.enterprise.create-an-enterprise-account %} For more information, see "[Creating an enterprise account](/admin/overview/creating-an-enterprise-account)."
 
 {% data reusables.enterprise-accounts.invite-organization %}
+
 {% endif %}
 {% endif %}
 
 {% ifversion fpt or ghec %}
-## Termos de serviços e proteção de dados para organizações
+## Terms of service and data protection for organizations
 
-Uma entidade, como uma empresa, não lucrativa, ou um grupo, pode concordar com os Termos de serviço padrão ou os Termos de serviço corporativos para a respectiva organização. Para obter mais informações, consulte "[Atualizar para os Termos de serviço corporativos](/articles/upgrading-to-the-corporate-terms-of-service)".
+An entity, such as a company, non-profit, or group, can agree to the Standard Terms of Service or the Corporate Terms of Service for their organization. For more information, see "[Upgrading to the Corporate Terms of Service](/articles/upgrading-to-the-corporate-terms-of-service)."
 
 {% endif %}

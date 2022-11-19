@@ -1,6 +1,6 @@
 ---
-title: Glosario de GitHub
-intro: 'Este glosario te presenta la terminología común de Git y de {% data variables.product.prodname_dotcom %}.'
+title: GitHub glossary
+intro: 'This glossary introduces common Git and {% data variables.product.prodname_dotcom %} terminology.'
 redirect_from:
   - /articles/github-glossary
   - /github/getting-started-with-github/github-glossary
@@ -11,17 +11,16 @@ versions:
   ghae: '*'
   ghec: '*'
 ---
-
-{% for term in site.data.glossaries.external %}
-  ### {% data glossaries.external[forloop.index0].term %}
-  {% data glossaries.external[forloop.index0].description %}
+{% for glossary in glossaries %}
+  ### {{ glossary.term }}
+  {{ glossary.description }}
   ---
 {% endfor %}
 
 ---
 
-## Leer más
+## Further reading
 
-- [El glosario oficial de Git](https://www.kernel.org/pub/software/scm/git/docs/gitglossary.html)
-- [Documentación de Git](https://git-scm.com/doc)
-- [Lista de comandos de Git](https://git-scm.com/docs)
+- [The Official Git Glossary](https://www.kernel.org/pub/software/scm/git/docs/gitglossary.html)
+- [Git documentation](https://git-scm.com/doc)
+- [Git command list](https://git-scm.com/docs)

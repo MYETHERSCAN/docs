@@ -1,8 +1,7 @@
 ---
-title: Solucionar problemas de codespaces
-shortTitle: Solução de Problemas
-product: '{% data reusables.gated-features.codespaces %}'
-intro: 'Estes guias fornecem informações sobre solução de problemas de {% data variables.product.prodname_github_codespaces %}'
+title: Troubleshooting GitHub Codespaces
+shortTitle: Troubleshooting
+intro: 'These guides provide information for troubleshooting {% data variables.product.prodname_github_codespaces %}'
 versions:
   fpt: '*'
   ghec: '*'
@@ -19,7 +18,8 @@ children:
   - /troubleshooting-prebuilds
   - /troubleshooting-dotfiles-for-codespaces
   - /troubleshooting-port-forwarding-for-github-codespaces
-  - /troubleshooting-codespaces-clients
+  - /troubleshooting-github-codespaces-clients
+  - /troubleshooting-gpg-verification-for-github-codespaces
   - /working-with-support-for-github-codespaces
 ---
 

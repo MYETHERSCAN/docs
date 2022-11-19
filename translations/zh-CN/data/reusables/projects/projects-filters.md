@@ -1,8 +1,10 @@
-- 要筛选多个值的任何匹配项（OR 查询），请用逗号分隔这些值。 例如， `label:"good first issue",bug` 将列出标签为 `good first issue` 或 `bug` 的所有议题。
-- 要过滤缺少特定值的字段，请在过滤器之前加入 `-`。 例如， `-label:"bug"` 只会显示没有标签的 `bug` 的项。
-- 要过滤缺少所有值的字段, 请输入 `no:`，后接字段名称。 例如，`no:assignee` 仅显示没有受理人的项。
-- 要按状态过滤，请输入 `is:`。 例如 `is: issue` 或 `is:open`。
-- 多个过滤条件之间用逗号分隔。 例如，`status:"In progress" -label:"bug" no:assignee` 仅显示状态为 `In progress`、没有标签 `bug` 且没有受理人的项。
-- 要筛选迭代字段的上一个、当前或下一个迭代，请使用 `@previous`、`@current` 或 `@next`。 例如 `sprint:@current`。
-- 要筛选分配给查看器的项目，请使用 `@me`。 例如 `assignee:@me`。 使用此视图的任何人都将看到分配给自己的项目。
-- 要筛选日期和数字字段，请使用 `>`、`>=`、`<`、`<=` 和 `..` 范围查询。 例如：`target:2022-03-01..2022-03-15`。 更多信息请参阅“[了解搜索语法](/search-github/getting-started-with-searching-on-github/understanding-the-search-syntax)”。
+- To filter for any match of multiple values (an OR query), separate the values with a comma. For example `label:"good first issue",bug` will list all issues labelled `good first issue` or `bug`.
+- To filter for the absence of a specific value, place `-` before your filter. For example, `-label:"bug"` will only show items that do not have the label `bug`.
+- To filter for the absence of all values, enter `no:` followed by the field name. For example, `no:assignee` will only show items that do not have an assignee.
+- To filter by state, enter `is:`. For example, `is: issue` or `is:open`.
+- Separate multiple filters with a space. For example, `status:"In progress" -label:"bug" no:assignee` will show only items that have a status of `In progress`, do not have the label `bug`, and do not have an assignee.
+- To filter for the previous, current, or next iteration of an iteration field, use `@previous`, `@current`, or `@next`. For example, `iteration:@current`.
+- To filter for items assigned to the viewer, use `@me`. For example, `assignee:@me`. Anyone using this view will see items assigned to themselves.
+- To filter by when an item was last updated, use `last-updated:` followed by the number of days. This filter only supports `{number}days` (or `1day` for a single day) as a unit. For example, `last-updated:7days` will only show items that were last updated 7 or more days ago.
+- To filter date and number fields, use `>`, `>=`, `<`, `<=`, and `..` range queries. For example: `target:2022-03-01..2022-03-15`. For more information, see "[Understanding the search syntax](/search-github/getting-started-with-searching-on-github/understanding-the-search-syntax)." {% ifversion projects-v2-tasklists %}
+- To filter for issues tracked by a specified issue, use `tracked-by:"<OWNER>/<REPO>#<ISSUE NUMBER>"` and replace `<OWNER>` with the repository owner, `<REPO>` with the repository name, and `<ISSUE NUMBER>` with the issue number. {% endif %}

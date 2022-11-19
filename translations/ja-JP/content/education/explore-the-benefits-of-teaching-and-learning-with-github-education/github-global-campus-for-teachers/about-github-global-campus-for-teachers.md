@@ -18,7 +18,7 @@ As a faculty member at an accredited educational institution, you can apply for 
 
 ![{% data variables.product.prodname_global_campus %} portal for teachers](/assets/images/help/education/global-campus-portal-teachers.png)
 
-個人の割引を適用する前に、あなたの学習コミュニティがすでに弊社と{% data variables.product.prodname_campus_program %}学校としてパートナーになっているかを確認してください。 詳しい情報については、「[{% data variables.product.prodname_campus_program %} について](/education/explore-the-benefits-of-teaching-and-learning-with-github-education/about-github-campus-program)」を参照してください。
+Before applying for an individual discount, check if your learning community is already partnered with us as a {% data variables.product.prodname_campus_program %} school. For more information, see "[About {% data variables.product.prodname_campus_program %}](/education/explore-the-benefits-of-teaching-and-learning-with-github-education/about-github-campus-program)."
 
 ## {% data variables.product.prodname_global_campus %} features for teachers
 
@@ -30,6 +30,8 @@ As a faculty member at an accredited educational institution, you can apply for 
   - Stay in the know on what the student community is interested in by rewatching recent [Campus TV](https://www.twitch.tv/githubeducation) episodes. Campus TV is created by {% data variables.product.prodname_dotcom %} and student community leaders and can be watched live or on demand.
   - Request a {% data variables.product.prodname_dotcom %} swag bag with educational materials and goodies for your students.
 
-## 参考リンク
+A free subscription for {% data variables.product.prodname_copilot %} is available to verified teachers with {% data variables.product.prodname_education %}. You will be automatically notified about the free subscription when you visit the {% data variables.product.prodname_copilot %} subscription page in your account settings. For more information about subscribing to and using {% data variables.product.prodname_copilot %}, see "[Managing your {% data variables.product.prodname_copilot %} subscription](/billing/managing-billing-for-github-copilot/managing-your-github-copilot-subscription#setting-up-a-trial-of-github-copilot)" and "[About {% data variables.product.prodname_copilot %}](/copilot/overview-of-github-copilot/about-github-copilot)."
 
-- [学生向け {% data variables.product.prodname_global_campus %}について](/education/explore-the-benefits-of-teaching-and-learning-with-github-education/github-global-campus-for-students/about-github-global-campus-for-students)
+## Further reading
+
+- "[About {% data variables.product.prodname_global_campus %} for students](/education/explore-the-benefits-of-teaching-and-learning-with-github-education/github-global-campus-for-students/about-github-global-campus-for-students)"

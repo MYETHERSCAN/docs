@@ -3,7 +3,7 @@ import path from 'path'
 import cheerio from 'cheerio'
 import { describe, expect } from '@jest/globals'
 
-import Page from '../../lib/page.js'
+import Page, { FrontmatterErrorsError } from '../../lib/page.js'
 import { allVersions } from '../../lib/all-versions.js'
 import enterpriseServerReleases, { latest } from '../../lib/enterprise-server-releases.js'
 import nonEnterpriseDefaultVersion from '../../lib/non-enterprise-default-version.js'
@@ -727,7 +727,7 @@ describe('catches errors thrown in Page class', () => {
       })
     }
 
-    await expect(getPage).rejects.toThrowError('invalid frontmatter entry')
+    await expect(getPage).rejects.toThrow(FrontmatterErrorsError)
   })
 
   test('missing versions frontmatter', async () => {
@@ -742,7 +742,8 @@ describe('catches errors thrown in Page class', () => {
     await expect(getPage).rejects.toThrowError('versions')
   })
 
-  test('invalid versions frontmatter', async () => {
+  // TODO - UNSKIP WHEN GHAE IS UPDATED WITH SEMVER VERSIONING
+  test.skip('invalid versions frontmatter', async () => {
     async function getPage() {
       return await Page.init({
         relativePath: 'page-with-invalid-product-version.md',

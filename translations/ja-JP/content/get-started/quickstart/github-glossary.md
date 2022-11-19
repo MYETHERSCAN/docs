@@ -1,5 +1,5 @@
 ---
-title: GitHub 用語集
+title: GitHub glossary
 intro: 'This glossary introduces common Git and {% data variables.product.prodname_dotcom %} terminology.'
 redirect_from:
   - /articles/github-glossary
@@ -11,17 +11,16 @@ versions:
   ghae: '*'
   ghec: '*'
 ---
-
-{% for term in site.data.glossaries.external %}
-  ### {% data glossaries.external[forloop.index0].term %}
-  {% data glossaries.external[forloop.index0].description %}
+{% for glossary in glossaries %}
+  ### {{ glossary.term }}
+  {{ glossary.description }}
   ---
 {% endfor %}
 
 ---
 
-## 参考リンク
+## Further reading
 
-- [公式 Git 用語集](https://www.kernel.org/pub/software/scm/git/docs/gitglossary.html)
+- [The Official Git Glossary](https://www.kernel.org/pub/software/scm/git/docs/gitglossary.html)
 - [Git documentation](https://git-scm.com/doc)
 - [Git command list](https://git-scm.com/docs)

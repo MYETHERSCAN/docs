@@ -1,8 +1,7 @@
 ---
-title: Usando o GitHub Codespaces para pull requests
+title: Using GitHub Codespaces for pull requests
 shortTitle: Pull requests
-intro: 'Você pode usar {% data variables.product.prodname_github_codespaces %} no seu fluxo de trabalho de desenvolvimento para criar pull requests, revisar pull requests e resolver comentários de revisão.'
-product: '{% data reusables.gated-features.codespaces %}'
+intro: 'You can use {% data variables.product.prodname_github_codespaces %} in your web browser, or in {% data variables.product.prodname_vscode %} to create pull requests, review pull requests, and address review comments.'
 versions:
   fpt: '*'
   ghec: '*'
@@ -15,30 +14,45 @@ redirect_from:
   - /codespaces/developing-in-codespaces/using-codespaces-for-pull-requests
 ---
 
-## Sobre pull requests no {% data variables.product.prodname_github_codespaces %}
+## About pull requests in {% data variables.product.prodname_github_codespaces %}
 
-{% data variables.product.prodname_github_codespaces %} fornece a você muitas das funcionalidades que você pode precisar para trabalhar com pull requests:
+{% data variables.product.prodname_github_codespaces %} provides you with many of the capabilities you might need to work with pull requests:
 
-- [Cria um pull request](/codespaces/developing-in-codespaces/using-source-control-in-your-codespace#raising-a-pull-request) - Ao usar os comandos Terminal e Git ou a visão de controle de origem, você pode criar pull requests da mesma forma que faria em {% data variables.product.prodname_dotcom_the_website %}. Se o repositório usar um modelo de pull request, você poderá usá-lo na visualização de controle de origem.
-- [Abra um pull request](#opening-a-pull-request-in-codespaces) - Você pode abrir um pull request existente em um codespace, desde que você tenha acesso a um acesso de codespace ao branch no qual que está sendo mesclado.
-- [Revise um pull request](#reviewing-a-pull-request-in-codespaces) - Após abrir um pull request em um codespace, você poderá usar a vista "Pull request do GitHub" para adicionar comentários e aprovar pull requests. Você também pode usar {% data variables.product.prodname_codespaces %} para [ver os comentários da revisão](#view-comments-from-a-review-in-codespaces).
+- [Create a pull request](/codespaces/developing-in-codespaces/using-source-control-in-your-codespace#raising-a-pull-request) - Using either the Terminal and Git commands or the Source Control view, you can create pull requests just as you would on {% data variables.product.prodname_dotcom_the_website %}. If the repository uses a pull request template, you'll be able to use this within the Source Control view.
+- [Open a pull request](#opening-a-pull-request-in-codespaces) – You can open an existing pull request in a codespace, provided you have codespace access to the branch that is being merged in.
+- [Review a pull request](#reviewing-a-pull-request-in-codespaces) - Once you have opened a pull request in a codespace, you can use the "GitHub Pull Request" view to add review comments and approve pull requests. You can also use {% data variables.product.prodname_github_codespaces %} to [view review comments](#view-comments-from-a-review-in-codespaces).
 
-## Abrir um pull request em {% data variables.product.prodname_codespaces %}
+## Opening a pull request in {% data variables.product.prodname_codespaces %}
 
 {% data reusables.repositories.sidebar-pr %}
 
-2. Na lista de pull requests, clique no pull request que deseja abrir em {% data variables.product.prodname_codespaces %}.
-3. No lado direito da sua tela, clique em **Código de {% octicon "code" aria-label="The code icon" %}**.
-4. Na aba {% data variables.product.prodname_codespaces %}, clique em **Criar codespace no BRANCH**. ![Opção para abrir RP em um codespace](/assets/images/help/codespaces/open-with-codespaces-pr.png)
+1. In the list of pull requests, click the pull request you'd like to open in {% data variables.product.prodname_codespaces %}.
+1. On the right-hand side of your screen, click **{% octicon "code" aria-label="The code icon" %} Code**. 
+1. In the {% data variables.product.prodname_codespaces %} tab, click the plus sign ({% octicon "plus" aria-label="The plus icon" %})
 
-## Revendo um pull request em {% data variables.product.prodname_codespaces %}
+   ![Option to open PR in a codespace](/assets/images/help/codespaces/open-with-codespaces-pr.png)
 
-{% data reusables.codespaces.review-pr %}
+   A codespace is created for the pull request branch and is opened in your default editor for {% data variables.product.prodname_github_codespaces %}.
 
-Para obter mais informações sobre a revisão de um pull request, consulte "[Revisando alterações propostas em um pull request](/github/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/reviewing-proposed-changes-in-a-pull-request)".
+## Reviewing a pull request in {% data variables.product.prodname_codespaces %}
 
-## Visualizar de uma revisão em {% data variables.product.prodname_codespaces %}
+1. With your default editor set to either {% data variables.product.prodname_vscode %} or {% data variables.product.prodname_vscode %} for Web, open the pull request in a codespace, as described in "[Opening a pull request](/codespaces/developing-in-codespaces/using-codespaces-for-pull-requests#opening-a-pull-request-in-codespaces)" above.
+2. In the Activity Bar, click the **GitHub Pull Request** view. This view only appears when you open a pull request in a codespace.
+  ![Option to open PR in a codespace](/assets/images/help/codespaces/github-pr-view.png)
+3. To review a specific file, click the **Open File** icon in the sidebar.
+  ![Option to open PR in a codespace](/assets/images/help/codespaces/changes-in-files.png)
+4. To add review comments, click the **+** icon next to the line number. Type your review comment and then click **Start Review**.
+  ![Option to open PR in a codespace](/assets/images/help/codespaces/start-review.png)
+5. When you are finished adding review comments, from the sidebar you can choose to either submit the comments, approve the changes, or request changes.
+  ![Option to open PR in a codespace](/assets/images/help/codespaces/submit-review.png)
 
-Depois de receber feedback em um pull request, você poderá [abri-lo em um codespace](#opening-a-pull-request-in-codespaces) para ver os [comentários de revisão](#reviewing-a-pull-request-in-codespaces). A partir de lá você pode responder a comentários, adicionar reações ou ignorar a revisão.
+For more information on reviewing a pull request, see "[Reviewing proposed changes in a pull request](/github/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/reviewing-proposed-changes-in-a-pull-request)."
 
-  ![Opção para abrir RP em um codespace](/assets/images/help/codespaces/incorporating-codespaces.png)
+## View comments from a review in {% data variables.product.prodname_codespaces %}
+
+Once you have received feedback on a pull request, you can [open it in a codespace](#opening-a-pull-request-in-codespaces) in your web browser, or in {% data variables.product.prodname_vscode_shortname %}, to see the [review comments](#reviewing-a-pull-request-in-codespaces). From there you can respond to comments, add reactions, or dismiss the review. 
+
+  ![Option to open PR in a codespace](/assets/images/help/codespaces/incorporating-codespaces.png)
+
+
+

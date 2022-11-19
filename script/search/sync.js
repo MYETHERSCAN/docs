@@ -6,7 +6,6 @@ import buildRecords from './build-records.js'
 import findIndexablePages from './find-indexable-pages.js'
 import { allVersions } from '../../lib/all-versions.js'
 import { namePrefix } from '../../lib/search/config.js'
-import LunrIndex from './lunr-search-index.js'
 import { writeIndexRecords } from './search-index-records.js'
 
 // Build a search data file for every combination of product version and language
@@ -14,11 +13,9 @@ import { writeIndexRecords } from './search-index-records.js'
 export default async function syncSearchIndexes({
   language,
   version,
-  dryRun,
   notLanguage,
   outDirectory,
-  compressFiles,
-  generateLunrIndex,
+  config = {},
 }) {
   const t0 = new Date()
 
@@ -39,7 +36,7 @@ export default async function syncSearchIndexes({
   )
 
   // Exclude WIP pages, hidden pages, index pages, etc
-  const indexablePages = await findIndexablePages()
+  const indexablePages = await findIndexablePages(config.filter)
   const redirects = {}
   indexablePages.forEach((page) => {
     const href = page.relativePath.replace('index.md', '').replace('.md', '')
@@ -72,22 +69,11 @@ export default async function syncSearchIndexes({
         indexablePages,
         pageVersion,
         languageCode,
-        redirects
+        redirects,
+        config
       )
-      if (generateLunrIndex) {
-        const index = new LunrIndex(indexName, records)
-
-        if (!dryRun) {
-          await index.write({ outDirectory, compressFiles })
-          console.log('wrote index to file: ', indexName)
-        }
-      } else {
-        const fileWritten = await writeIndexRecords(indexName, records, {
-          outDirectory,
-          compressFiles,
-        })
-        console.log(`wrote records to ${fileWritten}`)
-      }
+      const fileWritten = await writeIndexRecords(indexName, records, outDirectory)
+      console.log(`wrote records to ${fileWritten}`)
     }
   }
   const t1 = new Date()

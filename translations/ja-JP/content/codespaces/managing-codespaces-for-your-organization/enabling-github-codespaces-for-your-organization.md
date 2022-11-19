@@ -1,9 +1,8 @@
 ---
 title: Enabling GitHub Codespaces for your organization
 shortTitle: 'Enable {% data variables.product.prodname_codespaces %}'
-intro: 'You can control which users in your organization can use {% data variables.product.prodname_github_codespaces %} at the organization''s expense.'
-product: '{% data reusables.gated-features.codespaces %}'
-permissions: 'To alter an organization''s billing settings, you must be an organization owner.'
+intro: "You can control which users in your organization can use {% data variables.product.prodname_github_codespaces %} at the organization's expense."
+permissions: "To alter an organization's billing settings, you must be an organization owner."
 redirect_from:
   - /codespaces/managing-codespaces-for-your-organization/managing-user-permissions-for-your-organization
   - /codespaces/managing-codespaces-for-your-organization/enabling-codespaces-for-your-organization
@@ -19,11 +18,11 @@ topics:
 
 ## About enabling {% data variables.product.prodname_github_codespaces %} for your organization
 
-Organization owners can control which users in your organization can create and use codespaces at the organization's expense.
+Organization owners can control which users in your organization can create and use codespaces at the organization's expense. For information about pricing, see "[About billing for {% data variables.product.prodname_github_codespaces %}](/billing/managing-billing-for-github-codespaces/about-billing-for-github-codespaces)."
 
-Only people who can clone a repository can create a codespace for that repository. To allow people to create codespaces for repositories owned by your organization, you must:
+Only people who can either push changes to a repository, or fork the repository, can create a codespace for that repository. To allow people to create codespaces for repositories owned by your organization, you must:
 
-- Ensure that users have at least write access to the repositories where they want to use a codespace. 詳しい情報については「[リポジトリへのアクセスを持つTeamや人の管理](/repositories/managing-your-repositorys-settings-and-features/managing-repository-settings/managing-teams-and-people-with-access-to-your-repository)」を参照してください。
+- Ensure that users have at least write access to the repositories where they want to use a codespace. For more information, see "[Managing teams and people with access to your repository](/repositories/managing-your-repositorys-settings-and-features/managing-repository-settings/managing-teams-and-people-with-access-to-your-repository)."
 - Ensure that your organization does not have an IP address allow list enabled. For more information, see "[Managing allowed IP addresses for your organization](/{% ifversion fpt %}enterprise-cloud@latest/{% endif %}organizations/keeping-your-organization-secure/managing-allowed-ip-addresses-for-your-organization){% ifversion fpt %}" in the {% data variables.product.prodname_ghe_cloud %} documentation.{% else %}."{% endif %}
 
 To allow people to create codespaces for which your organization will be billed, you must:
@@ -34,7 +33,7 @@ To allow people to create codespaces for which your organization will be billed,
 {% ifversion fpt %}
 {% note %}
 
-**Note:** If you are a verified educator or a teacher, you must enable {% data variables.product.prodname_codespaces %} from a {% data variables.product.prodname_classroom %} to use your {% data variables.product.prodname_codespaces %} Education benefit. For more information, see "[Using GitHub Codespaces with GitHub Classroom](/education/manage-coursework-with-github-classroom/integrate-github-classroom-with-an-ide/using-github-codespaces-with-github-classroom#about-the-codespaces-education-benefit-for-verified-teachers)."
+**Note:** If you are a verified educator or a teacher, you must enable {% data variables.product.prodname_github_codespaces %} from a {% data variables.product.prodname_classroom %} to use your {% data variables.product.prodname_codespaces %} Education benefit. For more information, see "[Using {% data variables.product.prodname_github_codespaces %} with {% data variables.product.prodname_classroom %}](/education/manage-coursework-with-github-classroom/integrate-github-classroom-with-an-ide/using-github-codespaces-with-github-classroom#about-the-codespaces-education-benefit-for-verified-teachers)."
 
 {% endnote %}
 {% endif %}
@@ -61,7 +60,7 @@ By default, a codespace can only access the repository from which it was created
 
    {% endnote %}
 
-1. [**Save**] をクリックします。
+1. Click **Save**.
 1. If you chose **Selected members**, an input box is displayed for you to enter the names of users you want to select.
 
    ![Input box for selecting users](/assets/images/help/codespaces/codespaces-org-billing-add-users.png)
@@ -77,8 +76,8 @@ You can prevent the creation and use of codespaces billable to your organization
 {% data reusables.organizations.click-codespaces %}
 1. Under "Billing," select **Disabled**.
 
-## 利用限度の設定
+## Setting a spending limit
 
-{% data reusables.codespaces.codespaces-spending-limit-requirement %}
+{% data reusables.codespaces.codespaces-spending-limit-requirement %} 
 
-アカウントの利用上限の管理と変更については、「[{% data variables.product.prodname_codespaces %} の利用上限の管理](/billing/managing-billing-for-github-codespaces/managing-spending-limits-for-codespaces)」を参照してください。
+For information on managing and changing your account's spending limit, see "[Managing your spending limit for {% data variables.product.prodname_codespaces %}](/billing/managing-billing-for-github-codespaces/managing-spending-limits-for-codespaces)."

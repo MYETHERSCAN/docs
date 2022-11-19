@@ -1,6 +1,6 @@
 ---
-title: Acessando relatórios de conformidade para a sua organização
-intro: 'Você pode acessar as denúncias de conformidade de {% data variables.product.company_short %}, como nossos relatórios SOC e auto-avaliação da Cloud Security Alliance CAIQ (CSA CAIQ), para a sua organização.'
+title: Accessing compliance reports for your organization
+intro: 'You can access {% data variables.product.company_short %}''s compliance reports, such as our SOC reports and Cloud Security Alliance CAIQ self-assessment (CSA CAIQ), for your organization.'
 versions:
   ghec: '*'
 type: how_to
@@ -8,31 +8,31 @@ topics:
   - Organizations
   - Teams
 permissions: Organization owners can access compliance reports for the organization.
-shortTitle: Acessar relatórios de conformidade
+shortTitle: Access compliance reports
 ---
 
-## Sobre os relatórios de conformidade de {% data variables.product.company_short %}
+## About {% data variables.product.company_short %}'s compliance reports
 
-Você pode acessar os relatórios de conformidade de {% data variables.product.company_short %} nas configurações da organização.
+You can access {% data variables.product.company_short %}'s compliance reports in your organization settings.
 
 {% data reusables.security.compliance-report-list %}
 
 
 {% note %}
 
-**Obserbação:** Para ver relatórios de conformidade, a sua organização deve usar {% data variables.product.prodname_ghe_cloud %}. {% data reusables.enterprise.link-to-ghec-trial %}
+**Note:** To view compliance reports, your organization must use {% data variables.product.prodname_ghe_cloud %}. {% data reusables.enterprise.link-to-ghec-trial %}
 
 {% endnote %}
 
-## Acessando relatórios de conformidade para a sua organização
+## Accessing compliance reports for your organization
 
 {% data reusables.profile.access_org %}
 {% data reusables.profile.org_settings %}
-{% data reusables.organizations.security %}
-1. Em "Relatórios de Conformidade", à direita do relatório que você deseja acessar, clique em {% octicon "download" aria-label="The Download icon" %} **Download** ou {% octicon "link-external" aria-label="The external link icon" %} **Visualizar**.
+{% data reusables.organizations.compliance %}
+1. To the right of the report you want to access, click {% octicon "download" aria-label="The Download icon" %} **Download** or {% octicon "link-external" aria-label="The external link icon" %} **View**.
 
    {% data reusables.security.compliance-report-screenshot %}
 
-## Leia mais
+## Further reading
 
-- "[Relatórios de conformidade para a sua empresa](/admin/overview/accessing-compliance-reports-for-your-enterprise)"
+- "[Accessing compliance reports for your enterprise](/admin/overview/accessing-compliance-reports-for-your-enterprise)"
